@@ -3,7 +3,7 @@ Jquery Intro
 
 ## 2nd Semester Multimedia Design and Communication
 
-* `jquery01.01`: A Jquery boiler plate.
+* `jquery01.html`: A Jquery boiler plate.
 * The folders `css/` and `js/` with sample Jquery files.
 
 
