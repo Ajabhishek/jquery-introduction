@@ -3,7 +3,8 @@ Jquery Intro
 
 ## 2nd Semester Multimedia Design and Communication
 
-A Jquery boiler plate.
+* `jquery01.01`: A Jquery boiler plate.
+* The folders `css/` and `js/` with sample Jquery files.
 
 
 ## Jquery and WordPress
