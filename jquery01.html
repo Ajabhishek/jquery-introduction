@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Jquery Exercise 01</title>
+	<meta name="generator" content="Bluefish 2.2.7" >
+
+	<!-- Jquery styles -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet">
+	
+	<!-- add your styles from here (why?) -->
+
+</head>
+
+<body>
+
+	<h1 id="siteTitle"> Jquery Introduction </h1>
+	
+	<article>
+
+		<!-- start slipsum code -->
+		
+		<h2>No man, I don't eat pork</h2>
+		<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
+		
+		<h2>I gotta piss</h2>
+		<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass. </p>
+		
+		<h2>I gotta piss</h2>
+		<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee. </p>
+		
+		<!-- end slipsum code -->
+	
+		<p>
+			<a href="http://slipsum.com/" > (Quote: Samuel L. Ipsum) </a>		
+		</p>
+		
+		<ul>
+			<li> <a href="https://www.w3schools.com/jquery/jquery_hide_show.asp" > W3: On your own </a> </li>		
+		</ul>
+	
+	</article>
+
+<!-- jquery scripts -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+<script>
+/**
+ * Your Code 
+ * A $( document ).ready() block.
+ * It's just a good idea to start like that
+ * @url: https://learn.jquery.com/using-jquery-core/document-ready/
+ */
+$( document ).ready(function() {
+    console.log( "Jquery to Captain: alert level green!" );
+
+	// select all h2, then click 'eventlistener', on click animate
+	$('h2').click(function () {
+		console.log('Clicked on h2');
+		
+		// @url: http://api.jquery.com/animate/
+		$('p').animate({
+		    opacity: 0.25,
+		    left: "+=50",
+		    height: "toggle"
+		  }, 5000, function() {
+		    // Animation complete.
+		  });
+			});
+			
+	// inspired by Duckett ch. 6 and 7
+	$('p').hide().fadeIn(2000);    
+    
+});
+
+</script>
+
+</body>
+</html>
